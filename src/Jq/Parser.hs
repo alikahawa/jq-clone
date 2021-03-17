@@ -9,3 +9,4 @@ parse :: P.Parser a -> String -> Maybe a
 parse p s = case (P.parse p s) of
   [(v, "")] -> Just v
   _ -> Nothing
+
